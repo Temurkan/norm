@@ -1,40 +1,229 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
+  font-family: Roboto, sans-serif;
+  color: #274c5b;
+}
+.hero {
+  background: url(./image/hero.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop {
+  font-size: 70px;
   font-family: sans-serif;
-  text-align: center;
-}
-h1 {
-  text-transform: uppercase;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #274c5b;
+  font-weight: 700;
 }
 
-p {
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
+.cards {
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 90px;
+  padding-inline: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 20px;
+  place-items: center;
 }
-.kursiv {
+
+article {
+  background-color: #f9f8f8;
+  max-width: 335px;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+figure {
+  display: flex;
+  width: 230px;
+  align-items: center;
+  height: 230px;
+  padding: 15px;
+}
+
+.card-image {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+}
+.link {
+  text-decoration: none;
+}
+
+.card-badge {
+  background-color: #274c5b;
+  color: white;
+  font-size: 15px;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+
+.title {
+  font-size: 20px;
+  color: #274c5b;
+  font-weight: 600;
+}
+
+.price-old {
+  font-size: 15px;
+  color: #b8b8b8;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+.price-new {
+  font-size: 18px;
+
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+.star {
+  font-size: 20px;
+  color: #ffa858;
+  line-height: 1;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #dedddd;
+  margin-block: 15px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+  background-image: url(./image/orange.jpg);
+  max-width: 1220px;
+  margin: 0 auto;
+  margin-top: 90px;
+  padding: 70px 100px;
+  border-radius: 30px;
+}
+
+form {
+  display: flex;
+  gap: 6px;
+}
+
+input {
+  width: 350px;
+  height: 80px;
+  font-size: 18px;
   font-style: italic;
+  border: none;
+  border-radius: 16px;
+  padding-left: 14px;
 }
-.qalin {
-  font-weight: bold;
-  text-shadow: 2px 2px 4px #888888;
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 80px;
+  border: none;
+  border-radius: 16px;
+  background-color: #274c5b;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
 }
 
-.oraliq {
-  letter-spacing: 3px;
-  line-height: 33px;
+.footer {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 120px;
 }
 
-.tepa_chiziq {
-  text-decoration: overline;
-  text-align: left;
+h3 {
+  font-size: 30px;
+  margin-bottom: 24px;
 }
 
-.past_chiziq {
-  text-decoration: underline;
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.footer-line {
+  width: 1px;
+  height: 336px;
+  background-color: #d4d4d4;
+}
+
+.left {
+  margin-right: 50px;
   text-align: right;
 }
 
-.kichik {
-  text-transform: lowercase;
+.left-text {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.center {
+  display: flex;
+  max-width: 546px;
+  padding: 0 40px;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+}
+.logo {
+  font-size: 38px;
+  font-weight: 700;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  align-items: center;
+}
+.logo-text {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.utility {
+  margin-left: 50px;
+}
+
+.right {
+  text-align: left;
+}
+
+.copyright {
+  border-top: 1px solid #d4d4d4;
+  padding: 20px 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.copylogo {
+  font-weight: 600;
 }
