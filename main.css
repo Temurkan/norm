@@ -1,84 +1,66 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
   font-family: sans-serif;
 }
 
-.resp {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-.grid {
+body {
+  min-height: 96vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 0 auto;
-  grid-template-rows: 300px;
-  padding-top: 30px;
+  grid-template-columns: 20% auto 20%;
+  grid-template-areas:
+    "header header header"
+    "menu main ad1"
+    "menu main ad1"
+    "ad2 main ad1"
+    "footer footer footer";
+  gap: 10px;
+  margin: 10px;
 }
 
-.square {
-  width: 300px;
-  height: 300px;
+header {
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin: 0;
+  align-items: center;
+  grid-area: header;
+  background-color: teal;
 }
-.square:nth-child(1) {
-  background-color: cadetblue;
-}
-.square:nth-child(2) {
-  background-color: darkkhaki;
-}
-.square:nth-child(3) {
-  background-color: cornflowerblue;
-}
-@media screen and (min-width: 1024px) {
-  .resp {
-    background-color: blue;
-  }
-  h1 {
-    font-size: 26px;
-  }
-  p {
-    font-size: 20px;
-  }
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: menu;
+  background-color: violet;
 }
 
-@media screen and (min-width: 600px) and (max-width: 1023px) {
-  .resp {
-    background-color: yellow;
-  }
-  h1 {
-    font-size: 22px;
-  }
-  p {
-    font-size: 16px;
-  }
-  .grid {
-    grid-template-columns: 1fr 1fr;
-  }
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: main;
+  background-color: yellowgreen;
 }
 
-@media screen and (max-width: 599px) {
-  .resp {
-    background-color: green;
-  }
-  h1 {
-    font-size: 18px;
-  }
-  p {
-    font-size: 12px;
-  }
-  .grid {
-    grid-template-columns: 1fr;
-  }
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+}
+
+.ad1 {
+  grid-area: ad1;
+}
+
+.ad2 {
+  grid-area: ad2;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: footer;
+  background-color: royalblue;
 }
