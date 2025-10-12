@@ -1,36 +1,50 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
-  font-family: sans-serif;
-  font-family: "Clash Display", sans-serif;
-}
-h2 {
+  height: 90vh;
   display: flex;
   justify-content: center;
-  font-weight: 400;
-  margin-block: 36px;
-}
-h3 {
-  font-weight: 400;
-  font-size: 20px;
-}
-p {
-  font-family: "Satoshi", sans-serif;
-  font-size: 16px;
+  align-items: center;
 }
 
-.cards {
-  max-width: 1280px;
-  justify-content: space-between;
+.pyramid {
   display: flex;
-  margin: 0 auto;
+  flex-direction: column;
 }
 
-.card {
-  height: 244px;
-  width: 305px;
-  background-color: #f9f9f9;
-  padding: 48px;
+.row {
+  display: grid;
+  justify-content: center;
+}
+.pyra {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.pyra1 {
+  background-color: antiquewhite;
+}
+
+.pyra2 {
+  background-color: beige;
+  grid-column-start: 1;
+}
+.pyra3 {
+  background-color: beige;
+  grid-column-start: 2;
+}
+
+.pyra4 {
+  background-color: blanchedalmond;
+  grid-column-start: 1;
+}
+.pyra5 {
+  background-color: blanchedalmond;
+  grid-column-start: 2;
+}
+.pyra6 {
+  background-color: blanchedalmond;
+  grid-column-start: 3;
 }
