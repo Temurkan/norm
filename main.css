@@ -1,36 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-image: url(https://images.pexels.com/photos/237266/pexels-photo-237266.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  font-family: sans-serif;
+  font-family: "Clash Display", sans-serif;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  margin-block: 36px;
+}
+h3 {
+  font-weight: 400;
+  font-size: 20px;
+}
+p {
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
 }
 
-.qizil {
-  color: red;
-}
-.sariq {
-  color: yellow;
-}
-.yashil {
-  color: green;
+.cards {
+  max-width: 1280px;
+  justify-content: space-between;
+  display: flex;
+  margin: 0 auto;
 }
 
-div {
-  padding: 3px;
-  margin: 3px;
-  border: 3px solid brown;
-  border-radius: 18px;
-}
-button {
-  padding: 30px;
-  margin: 30px;
-  border-radius: 9px;
-}
-.aqua {
-  border: 3px solid aquamarine;
-}
-
-.fiolet {
-  border: 3px solid rebeccapurple;
-}
-
-.pushti {
-  border: 3px solid pink;
+.card {
+  height: 244px;
+  width: 305px;
+  background-color: #f9f9f9;
+  padding: 48px;
 }
